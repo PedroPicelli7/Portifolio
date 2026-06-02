@@ -1,61 +1,253 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifolio</title>
-    <link rel="stylesheet" href="portifolio.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Pedro Picelli | Desenvolvedor Full-stack & Front-end</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 1. CSS DA BIBLIOTECA DE ANIMAÇÃO (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <nav><div class="circulos">
-        <div class="circulover"></div>
-        <div class="circuloa"></div>
-        <div class="circuloverd"></div>
-    </div>
-        Bem vindo
-    </nav>
-    <section class="ini">
-        <h1 class="desen">Desenvolvedor de Sites e Páginas</h1>
-        <img src="20240924_164410.jpg" width="300px" class="img">
-    </section>
-    <section>
-        <p class="textde">Especializado em Criação de Sites Dinâmicos e funcionais. Desenvolvendo projetos com automação, aplicativos mobile, Linguagens de Programação e até Bancos de Dados.</p>
-    </section>
-    <section class="meio">
-        <img src="Logo1.png" width="380px" class="img2">
-        <h1 class="cria">
-            Criador da Infinity Pass
-        </h1>
-    </section>
-    <section>
-        <p class="textin">Com habilidades de Desenvolver Sites, aplicativos, bancos de Dados foi criado a Infinity Pass, para auxiliar aqueles que procuram melhorar seus negócios através da internet, utilizando algoritmos, conhecimentos técnicos, e até mesmo a IA para o crescimento.</p>
-    </section>
-    <section class="shab">
-        <h1 class="habtit">Habilidades</h1>
-    </section>
-    <ul class="lista">
-        <li>Linguagens de Programação: PHP, Python, Node.js, Java, C, C#, C++, Git</li><br>
-        <li>Programas para criação do Design: Figma, Photoshop, Gimp, Canva</li><br>
-        <li>Criação de Sites: Vscode, Wordpress.</li><br>
-        <li>Criação de Apps: Android Studio, Visual Studio</li><br>
-        <li>Bancos de Dados: Mysql, Heidesql</li>
-    </ul>
-    <section class="prop">
-        <h1 class="proptit">Propósito</h1>
-        <p class="proptex">Através da Internet, procuro auxiliar aqueles que precisam de mim, com dedicação, conhecimento e sabedoria. Procuro o melhor aos meus clientes fornecendo sites bem estruturados, com entendimento e desenvolvimento facilitado e garantindo uma qualidade de primeira!</p>
-    </section>
-    <section class="fin">
-        <div class="text"><h2>Ficou interessado?</h2>
-        <h4>Me chame para conversar clicando no botão abaixo!</h4>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">&lt;Pedro<span>Picelli</span> /&gt;</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato" class="btn-primary">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <button class="contato-bloco" onclick="window.open('https://wa.me/5519989767179?text=Olá,%20gostaria%20de%20saber%20mais%20informações!', '_blank');">Contato</button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <!-- Animação de surgimento suave para cima no bloco principal -->
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <span class="subtitle">Olá, eu sou o Pedro 👋</span>
+                <h1>Desenvolvedor Front-end & Full-stack Júnior</h1>
+                <p>Desenvolvedor Júnior com sólida base em lógica de programação e arquitetura de sistemas. Foco na entrega de interfaces responsivas, otimização de bancos de dados e implementação de novas funcionalidades utilizando C#, ASP.NET e tecnologias modernas.</p>
+                <div class="hero-btns">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn-secondary">Fale Comigo</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/PedroPicelli7" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/pedro-picelli" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:pedropicelli80@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <!-- SOBRE & FORMAÇÃO -->
+    <section class="about section" id="sobre">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Sobre & Formação</h2>
+            <div class="about-grid">
+                <!-- O texto surge da esquerda -->
+                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Objetivo Profissional</h3>
+                    <p>Busco atuar na manutenção evolutiva de aplicações legadas e participar ativamente na transição tecnológica de ecossistemas corporativos. Tenho foco em usabilidade, performance e experiência do usuário (UX) em cada linha de código que escrevo.</p>
+                </div>
+                <!-- A linha do tempo surge da direita -->
+                <div class="education-timeline" data-aos="fade-left" data-aos-delay="400">
+                    <h3>Formação Acadêmica</h3>
+                    <div class="timeline-item">
+                        <span class="date">2024 - Presente</span>
+                        <h4>Bacharelado em Ciência da Computação (5º Semestre)</h4>
+                        <p class="institution">FAM - Faculdade de Americana</p>
+                        <p>Ênfase em algoritmos, lógica de programação, engenharia de software e banco de dados.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2021 - 2023</span>
+                        <h4>Técnico em Desenvolvimento de Sistemas</h4>
+                        <p class="institution">Etec Polivalente de Americana</p>
+                        <p>Fundamentos estruturados de programação web, orientação a objetos e versionamento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="experience section section-alt" id="experiencia">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experiência Profissional</h2>
+            <div class="experience-list">
+                <!-- Primeiro card surge com fade-up -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Desenvolvedor Autônomo (Full-stack / Front-end)</h3>
+                            <span class="company">Projetos Independentes & Aplicações Web</span>
+                        </div>
+                        <span class="date">01/2022 - Presente</span>
+                    </div>
+                    <ul>
+                        <li>Desenvolvimento e publicação de aplicações web responsivas com foco em performance.</li>
+                        <li>Implementação de lógicas de negócio em C# e estruturação de dados relacionais e não-relacionais.</li>
+                        <li>Integração de APIs baseadas em IA e serviços em nuvem (Firebase Auth/Realtime Database).</li>
+                        <li>Utilização de metodologias ágeis, versionamento com Git/GitHub e deploy via Vercel.</li>
+                    </ul>
+                </div>
+
+                <!-- Segundo card surge logo em seguida -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Gerente de Loja de Informática</h3>
+                            <span class="company">MaiaTecnologia</span>
+                        </div>
+                        <span class="date">09/2025 - 11/2025</span>
+                    </div>
+                    <ul>
+                        <li>Administração de perfis em marketplaces corporativos e operação direta de sistemas ERP.</li>
+                        <li>Elaboração técnica de orçamentos de hardware/software e controle rigoroso de pedidos.</li>
+                        <li>Otimização de rotinas digitais de atendimento ao cliente, elevando índices de clareza e satisfação.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS EM DESTAQUE -->
+    <section class="projects section" id="projetos">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projetos em Destaque</h2>
+            <div class="projects-grid">
+                <!-- CineSearch (Fade para a direita) -->
+                <div class="project-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="project-content">
+                        <span class="project-tag">Destaque Acadêmico</span>
+                        <h3>Cine Search</h3>
+                        <p>Plataforma de busca cinematográfica desenvolvida aplicando conceitos avançados de UI/UX, consumo de APIs dinâmicas e armazenamento persistente em nuvem.</p>
+                        <div class="project-techs">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Firebase</span>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://cine-search-gamma.vercel.app" target="_blank" class="btn-sm"><i class="fas fa-external-link-alt"></i> Visitar Site</a>
+                            <a href="#" class="btn-sm btn-ghost"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogo da Memória (Fade para a esquerda) -->
+                <div class="project-card" data-aos="fade-left" data-aos-delay="300">
+                    <div class="project-content">
+                        <span class="project-tag">Front-end Essencial</span>
+                        <h3>Jogo da Memória & Cartão 3D</h3>
+                        <p>Projetos focados no domínio de lógica de interface, estilização moderna com CSS3 avançado e manipulação dinâmica de estado do DOM.</p>
+                        <div class="project-techs">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Git</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PedroPicelli7" target="_blank" class="btn-sm"><i class="fab fa-github"></i> Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPETÊNCIAS / HABILIDADES -->
+    <section class="skills section section-alt" id="habilidades">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <!-- Cada categoria de skill vai surgir sequencialmente (efeito cascata) -->
+                <div class="skills-category" data-aos="zoom-in" data-aos-delay="100">
+                    <h3><i class="fas fa-code"></i> Linguagens</h3>
+                    <div class="skills-tags">
+                        <span>C#</span>
+                        <span>SQL (SQL Server / MongoDB)</span>
+                        <span>JavaScript</span>
+                        <span>HTML5 / CSS3</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="skills-category" data-aos="zoom-in" data-aos-delay="200">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Techs</h3>
+                    <div class="skills-tags">
+                        <span>ASP.NET Core</span>
+                        <span>Web Forms</span>
+                        <span>Blazor (Noções)</span>
+                        <span>React</span>
+                        <span>Firebase</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skills-category" data-aos="zoom-in" data-aos-delay="300">
+                    <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+                    <div class="skills-tags">
+                        <span>Git & GitHub</span>
+                        <span>Visual Studio</span>
+                        <span>VS Code</span>
+                        <span>Vercel</span>
+                        <span>Figma</span>
+                        <span>NPM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact section" id="contato">
+        <div class="container contact-container" data-aos="fade-up">
+            <h2 class="section-title">Vamos construir algo juntos?</h2>
+            <p>Estou em busca de oportunidades como Desenvolvedor Júnior. Se você gostou do meu perfil, entre em contato por e-mail ou redes sociais!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>pedropicelli80@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+55 (19) 98976-7179</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Americana - SP</span>
+                </div>
+            </div>
+            <a href="mailto:pedropicelli80@gmail.com" class="btn-primary btn-large">Enviar E-mail</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Pedro Picelli Raier Gonçalves. Desenvolvido com foco em Clean Code.</p>
+        </div>
+    </footer>
+
+
+    <!-- 2. SCRIPT DA BIBLIOTECA AOS + INICIALIZAÇÃO -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa as animações e define configurações padrão globais
+        AOS.init({
+            duration: 800, // Duração padrão da animação (em milissegundos)
+            once: true,    // True faz a animação acontecer apenas uma vez (ao descer a página)
+            offset: 100    // Distância (em px) do elemento até a tela para disparar a animação
+        });
+    </script>
 </body>
 </html>

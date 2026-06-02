@@ -3,282 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Picelli | Desenvolvedor Full-stack & Front-end</title>
+    <title>Pedro Picelli | Full-stack Developer</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome para os ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- 1. CSS DA BIBLIOTECA DE ANIMAÇÃO (AOS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">&lt;Pedro<span>Picelli</span> /&gt;</a>
+            <a href="#" class="logo">Pedro<span>Picelli</span></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#contato" class="btn-primary">Contato</a></li>
+                    <li><a href="#sobre">/Sobre</a></li>
+                    <li><a href="#projetos">/Projetos</a></li>
+                    <li><a href="#habilidades">/Habilidades</a></li>
+                    <li><a href="#experiencia">/Experiência</a></li>
+                    <li><a href="#contato" class="btn-nav">Contato →</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <!-- Hero Section -->
+
     <section class="hero" id="home">
-        <div class="container hero-container" data-aos="fade-up" data-aos-duration="1000">
-            <!-- Coluna da Esquerda (Seu texto) -->
+        <div class="container hero-container" data-aos="fade-up" data-aos-duration="1200">
             <div class="hero-content">
-                <span class="subtitle">Olá, eu sou o Pedro 👋</span>
-                <h1>Desenvolvedor Front-end & Full-stack Júnior</h1>
-                <p>Desenvolvedor Júnior com sólida base em lógica de programação e arquitetura de sistemas. Foco na entrega de interfaces responsivas, otimização de bancos de dados e implementação de novas funcionalidades utilizando C#, ASP.NET e tecnologias modernas.</p>
-                <div class="hero-btns">
-                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
-                    <a href="#contato" class="btn-secondary">Fale Comigo</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/PedroPicelli7" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/pedro-picelli" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:pedropicelli80@gmail.com"><i class="fas fa-envelope"></i></a>
+                <span class="subtitle">// DESENVOLVEDOR FRONT-END & FULL-STACK JÚNIOR</span>
+                <h1 class="hero-title">Full-stack<br><span>Developer</span></h1>
+                <p class="hero-description">
+                    Sólida base em lógica de programação e arquitetura de sistemas. Foco na entrega de interfaces responsivas, otimização de bancos de dados e transição tecnológica de ecossistemas corporativos utilizando C#, ASP.NET e ecossistemas modernos[cite: 5, 6].
+                </p>
+                
+                <div class="social-pills">
+                    <a href="https://github.com/PedroPicelli7" target="_blank" class="pill"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/pedro-picelli" target="_blank" class="pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:pedropicelli80@gmail.com" class="pill"><i class="fas fa-envelope"></i> Email</a>
                 </div>
             </div>
 
-            <!-- Coluna da Direita (Nova: Imagem/Elemento de Programação) -->
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-                <div class="code-window">
-                    <div class="window-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="window-title">portfolio.cs</span>
+            <div class="hero-visual" data-aos="zoom-in-left" data-aos-delay="200">
+                <div class="code-box">
+                    <div class="code-header">
+                        <div class="dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div>
+                        <span class="file-name">developer.cs</span>
                     </div>
-                    <div class="window-body">
-                        <pre><code><span class="keyword">using</span> System;
+                    <div class="code-body">
+                        <pre><code><span class="k">var</span> dev = <span class="k">new</span> <span class="t">Developer</span> {
+    Name = <span class="s">"Pedro Picelli"</span>, [cite: 1]
+    Level = <span class="s">"Junior"</span>, [cite: 2]
+    Core = [<span class="s">"C#"</span>, <span class="s">"ASP.NET"</span>, <span class="s">"React"</span>] [cite: 6]
+};
 
-<span class="keyword">namespace</span> <span class="type">PedroPortfolio</span>
-{
-    <span class="keyword">class</span> <span class="type">Program</span>
-    {
-        <span class="keyword">static</span> <span class="keyword">void</span> <span class="method">Main</span>()
-        {
-            <span class="keyword">var</span> pedro = <span class="keyword">new</span> <span class="type">Developer</span>({
-                Role = <span class="string">"Full-stack"</span>,
-                Skills = [<span class="string">"C#"</span>, <span class="string">"React"</span>, <span class="string">".NET"</span>]
-            });
-            
-            pedro.<span class="method">BuildAmazingProjects</span>();
-        }
-    }
-}</code></pre>
+<span class="c">// Ready to deploy</span>
+dev.<span class="m">OptimizeSystems</span>();</code></pre>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SOBRE & FORMAÇÃO -->
     <section class="about section" id="sobre">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Sobre & Formação</h2>
-            <div class="about-grid">
-                <!-- O texto surge da esquerda -->
-                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
-                    <h3>Objetivo Profissional</h3>
-                    <p>Busco atuar na manutenção evolutiva de aplicações legadas e participar ativamente na transição tecnológica de ecossistemas corporativos. Tenho foco em usabilidade, performance e experiência do usuário (UX) em cada linha de código que escrevo.</p>
+            <div class="about-layout">
+                <div class="about-headline" data-aos="fade-right">
+                    <h2 class="large-title">... /About<br>me</h2>
                 </div>
-                <!-- A linha do tempo surge da direita -->
-                <div class="education-timeline" data-aos="fade-left" data-aos-delay="400">
-                    <h3>Formação Acadêmica</h3>
-                    <div class="timeline-item">
-                        <span class="date">2024 - Presente</span>
-                        <h4>Bacharelado em Ciência da Computação (5º Semestre)</h4>
-                        <p class="institution">FAM - Faculdade de Americana</p>
-                        <p>Ênfase em algoritmos, lógica de programação, engenharia de software e banco de dados.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">2021 - 2023</span>
-                        <h4>Técnico em Desenvolvimento de Sistemas</h4>
-                        <p class="institution">Etec Polivalente de Americana</p>
-                        <p>Fundamentos estruturados de programação web, orientação a objetos e versionamento.</p>
+                <div class="about-details" data-aos="fade-left" data-aos-delay="200">
+                    <p class="highlight-text">
+                        Buscando atuar na manutenção evolutiva de aplicações legadas e transição tecnológica[cite: 5]. Foco total em UI/UX, Clean Code e modularização[cite: 20, 40].
+                    </p>
+                    
+                    <div class="education-block">
+                        <h3>Educação</h3>
+                        <div class="edu-item">
+                            <span class="edu-year">2024 — Presente</span> [cite: 10]
+                            <h4>Ciência da Computação (5º Semestre)</h4> [cite: 8]
+                            <p>FAM - Faculdade de Americana</p> [cite: 9]
+                        </div>
+                        <div class="edu-item">
+                            <span class="edu-year">2021 — 2023</span> [cite: 14]
+                            <h4>Técnico em Desenvolvimento de Sistemas</h4> [cite: 12]
+                            <p>Etec Polivalente de Americana</p> [cite: 13]
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- EXPERIÊNCIA -->
-    <section class="experience section section-alt" id="experiencia">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Experiência Profissional</h2>
-            <div class="experience-list">
-                <!-- Primeiro card surge com fade-up -->
-                <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="exp-header">
-                        <div>
-                            <h3>Desenvolvedor Autônomo (Full-stack / Front-end)</h3>
-                            <span class="company">Projetos Independentes & Aplicações Web</span>
-                        </div>
-                        <span class="date">01/2022 - Presente</span>
-                    </div>
-                    <ul>
-                        <li>Desenvolvimento e publicação de aplicações web responsivas com foco em performance.</li>
-                        <li>Implementação de lógicas de negócio em C# e estruturação de dados relacionais e não-relacionais.</li>
-                        <li>Integração de APIs baseadas em IA e serviços em nuvem (Firebase Auth/Realtime Database).</li>
-                        <li>Utilização de metodologias ágeis, versionamento com Git/GitHub e deploy via Vercel.</li>
-                    </ul>
-                </div>
-
-                <!-- Segundo card surge logo em seguida -->
-                <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="exp-header">
-                        <div>
-                            <h3>Gerente de Loja de Informática</h3>
-                            <span class="company">MaiaTecnologia</span>
-                        </div>
-                        <span class="date">09/2025 - 11/2025</span>
-                    </div>
-                    <ul>
-                        <li>Administração de perfis em marketplaces corporativos e operação direta de sistemas ERP.</li>
-                        <li>Elaboração técnica de orçamentos de hardware/software e controle rigoroso de pedidos.</li>
-                        <li>Otimização de rotinas digitais de atendimento ao cliente, elevando índices de clareza e satisfação.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJETOS EM DESTAQUE -->
     <section class="projects section" id="projetos">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Projetos em Destaque</h2>
-            <div class="projects-grid">
-                <!-- CineSearch (Fade para a direita) -->
-                <div class="project-card" data-aos="fade-right" data-aos-delay="100">
-                    <div class="project-content">
-                        <span class="project-tag">Destaque Acadêmico</span>
-                        <h3>Cine Search</h3>
-                        <p>Plataforma de busca cinematográfica desenvolvida aplicando conceitos avançados de UI/UX, consumo de APIs dinâmicas e armazenamento persistente em nuvem.</p>
-                        <div class="project-techs">
-                            <span>React</span>
-                            <span>JavaScript</span>
-                            <span>Firebase</span>
-                            <span>Vercel</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://cine-search-gamma.vercel.app" target="_blank" class="btn-sm"><i class="fas fa-external-link-alt"></i> Visitar Site</a>
-                            <a href="#" class="btn-sm btn-ghost"><i class="fab fa-github"></i> Código</a>
-                        </div>
+            <div class="section-header-flex">
+                <h2 class="large-title">My Designs &<br>Projects</h2>
+                <span class="section-counter">(02)</span>
+            </div>
+            
+            <div class="projects-grid-premium">
+                <div class="project-card-premium" data-aos="fade-up">
+                    <div class="p-card-header">
+                        <span class="p-tag">Acadêmico / Destaque</span> [cite: 31]
+                        <a href="https://cine-search-gamma.vercel.app" target="_blank" class="p-link">↗</a> [cite: 32]
+                    </div>
+                    <h3 class="p-title">Cine Search</h3> [cite: 31]
+                    <p class="p-desc">Plataforma de busca cinematográfica aplicando conceitos avançados de UI/UX, consumo de APIs dinâmicas e armazenamento em nuvem[cite: 34, 35].</p>
+                    <div class="p-techs">
+                        <span>React</span><span>JavaScript</span><span>Firebase</span> [cite: 32]
                     </div>
                 </div>
 
-                <!-- Jogo da Memória (Fade para a esquerda) -->
-                <div class="project-card" data-aos="fade-left" data-aos-delay="300">
-                    <div class="project-content">
-                        <span class="project-tag">Front-end Essencial</span>
-                        <h3>Jogo da Memória & Cartão 3D</h3>
-                        <p>Projetos focados no domínio de lógica de interface, estilização moderna com CSS3 avançado e manipulação dinâmica de estado do DOM.</p>
-                        <div class="project-techs">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>Git</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/PedroPicelli7" target="_blank" class="btn-sm"><i class="fab fa-github"></i> Ver no GitHub</a>
-                        </div>
+                <div class="project-card-premium" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-card-header">
+                        <span class="p-tag">Lógica & DOM</span> [cite: 39]
+                        <a href="https://github.com/PedroPicelli7" target="_blank" class="p-link">↗</a>
+                    </div>
+                    <h3 class="p-title">Jogo da Memória 3D</h3> [cite: 36]
+                    <p class="p-desc">Projetos focados no domínio de lógica de interface, estilização moderna e manipulação dinâmica de estado do DOM com Clean Code[cite: 39, 40].</p>
+                    <div class="p-techs">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span> [cite: 37]
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COMPETÊNCIAS / HABILIDADES -->
-    <section class="skills section section-alt" id="habilidades">
+    <section class="skills section" id="habilidades">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <!-- Cada categoria de skill vai surgir sequencialmente (efeito cascata) -->
-                <div class="skills-category" data-aos="zoom-in" data-aos-delay="100">
-                    <h3><i class="fas fa-code"></i> Linguagens</h3>
-                    <div class="skills-tags">
-                        <span>C#</span>
-                        <span>SQL (SQL Server / MongoDB)</span>
-                        <span>JavaScript</span>
-                        <span>HTML5 / CSS3</span>
-                        <span>Python</span>
+            <h2 class="large-title" data-aos="fade-up">Habilidades / Technologies</h2>
+            
+            <div class="skills-premium-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="sk-category">
+                    <h4>Linguagens</h4>
+                    <div class="sk-tags">
+                        <span class="tag-glow">C#</span><span class="tag-glow">SQL</span><span class="tag-glow">JavaScript</span><span class="tag-glow">Python</span> [cite: 43]
                     </div>
                 </div>
-                <div class="skills-category" data-aos="zoom-in" data-aos-delay="200">
-                    <h3><i class="fas fa-layer-group"></i> Frameworks & Techs</h3>
-                    <div class="skills-tags">
-                        <span>ASP.NET Core</span>
-                        <span>Web Forms</span>
-                        <span>Blazor (Noções)</span>
-                        <span>React</span>
-                        <span>Firebase</span>
-                        <span>Responsive Design</span>
+                <div class="sk-category">
+                    <h4>Frameworks / Techs</h4>
+                    <div class="sk-tags">
+                        <span>ASP.NET Core</span><span>React</span><span>Firebase</span><span>Blazor</span> [cite: 46]
                     </div>
                 </div>
-                <div class="skills-category" data-aos="zoom-in" data-aos-delay="300">
-                    <h3><i class="fas fa-tools"></i> Ferramentas</h3>
-                    <div class="skills-tags">
-                        <span>Git & GitHub</span>
-                        <span>Visual Studio</span>
-                        <span>VS Code</span>
-                        <span>Vercel</span>
-                        <span>Figma</span>
-                        <span>NPM</span>
+                <div class="sk-category">
+                    <h4>Ferramentas</h4>
+                    <div class="sk-tags">
+                        <span>Git</span><span>GitHub</span><span>VS Code</span><span>Figma</span><span>Vercel</span> [cite: 47]
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTATO -->
+    <section class="experience section" id="experiencia">
+        <div class="container">
+            <h2 class="large-title" data-aos="fade-up">Work Experience</h2>
+            
+            <div class="exp-table-premium">
+                <div class="exp-row-premium" data-aos="fade-up">
+                    <div class="exp-col date">2022 - Presente</div> [cite: 19]
+                    <div class="exp-col company">Autônomo</div> [cite: 17]
+                    <div class="exp-col role">Full-stack & Front-end Developer</div> [cite: 17]
+                    <div class="exp-col desc">Aplicações web focadas em UX, APIs de IA e Firebase[cite: 20, 22].</div>
+                </div>
+                <div class="exp-row-premium" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exp-col date">09/2025 - 11/2025</div> [cite: 26]
+                    <div class="exp-col company">MaiaTecnologia</div> [cite: 25]
+                    <div class="exp-col role">Gerente de Informática / ERP</div> [cite: 24, 27]
+                    <div class="exp-col desc">Operação de sistemas integrados ERP e orçamentos de hardware[cite: 27, 28].</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="contact section" id="contato">
-        <div class="container contact-container" data-aos="fade-up">
-            <h2 class="section-title">Vamos construir algo juntos?</h2>
-            <p>Estou em busca de oportunidades como Desenvolvedor Júnior. Se você gostou do meu perfil, entre em contato por e-mail ou redes sociais!</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>pedropicelli80@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>+55 (19) 98976-7179</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Americana - SP</span>
+        <div class="container" data-aos="zoom-in">
+            <div class="contact-box-premium">
+                <h2>Vamos construir algo inovador?</h2>
+                <p>Estou pronto para atuar em novos ecossistemas e desafios de desenvolvimento[cite: 5].</p>
+                <div class="c-links">
+                    <a href="mailto:pedropicelli80@gmail.com" class="c-btn">pedropicelli80@gmail.com</a> [cite: 3]
+                    <a href="tel:+5519989767179" class="c-btn">+55 (19) 98976-7179</a> [cite: 3]
                 </div>
             </div>
-            <a href="mailto:pedropicelli80@gmail.com" class="btn-primary btn-large">Enviar E-mail</a>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Pedro Picelli Raier Gonçalves. Desenvolvido com foco em Clean Code.</p>
+        <div class="container footer-flex">
+            <p>&copy; 2026 Pedro Picelli. Americana - SP.</p> [cite: 1, 3]
+            <p>Designed for Performance.</p>
         </div>
     </footer>
 
-
-    <!-- 2. SCRIPT DA BIBLIOTECA AOS + INICIALIZAÇÃO -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Inicializa as animações e define configurações padrão globais
-        AOS.init({
-            duration: 800, // Duração padrão da animação (em milissegundos)
-            once: true,    // True faz a animação acontecer apenas uma vez (ao descer a página)
-            offset: 100    // Distância (em px) do elemento até a tela para disparar a animação
-        });
+        AOS.init({ duration: 1000, once: true });
     </script>
 </body>
 </html>

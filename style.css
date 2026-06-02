@@ -139,16 +139,25 @@ a {
     color: var(--accent);
 }
 
-/* HERO SECTION */
+/* HERO SECTION (Estrutura e Alinhamento) */
 .hero {
-    min-height: calc(100vh - 73px);
+    min-height: calc(100vh - 73px); /* Desconta a altura da navbar para centralizar na tela */
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
+    padding: 40px 0;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Duas colunas perfeitas */
+    gap: 40px;
+    align-items: center;
+    width: 100%;
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 100%;
 }
 
 .hero .subtitle {
@@ -187,6 +196,79 @@ a {
 .social-links a:hover {
     color: var(--accent);
     transform: translateY(-3px);
+}
+
+/* HERO - JANELA DE CÓDIGO (DIREITA) */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-window {
+    background-color: #0b0f19;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                0 0 30px rgba(14, 165, 233, 0.1);
+    overflow: hidden;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    animation: float 4s ease-in-out infinite;
+}
+
+.window-header {
+    background-color: #1e293b;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red { background-color: #ef4444; }
+.dot.yellow { background-color: #f59e0b; }
+.dot.green { background-color: #10b981; }
+
+.window-title {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.window-body {
+    padding: 20px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    text-align: left;
+}
+
+.window-body pre {
+    margin: 0;
+}
+
+/* Syntax Highlighting */
+.code-window .keyword { color: #f43f5e; }  
+.code-window .type { color: #38bdf8; }     
+.code-window .method { color: #eab308; }   
+.code-window .string { color: #10b981; }   
+
+/* ANIMAÇÃO FLUTUANTE */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
 /* SOBRE & TIMELINE */
@@ -430,10 +512,30 @@ footer {
     font-size: 0.9rem;
 }
 
-/* RESPONSIVIDADE (MOBILE) */
+/* RESPONSIVIDADE (MEDIA QUERIES INTEGRADOS) */
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-image {
+        margin-top: 30px;
+        order: 2;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .window-body {
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Em um cenário real, você pode adicionar um menu hambúrguer com JS */
+        display: none;
     }
     
     .hero h1 {

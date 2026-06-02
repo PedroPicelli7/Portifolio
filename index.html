@@ -28,12 +28,12 @@
             </nav>
         </div>
     </header>
-
-    <!-- HERO SECTION -->
+    
+    <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container hero-container">
-            <!-- Animação de surgimento suave para cima no bloco principal -->
-            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container hero-container" data-aos="fade-up" data-aos-duration="1000">
+            <!-- Coluna da Esquerda (Seu texto) -->
+            <div class="hero-content">
                 <span class="subtitle">Olá, eu sou o Pedro 👋</span>
                 <h1>Desenvolvedor Front-end & Full-stack Júnior</h1>
                 <p>Desenvolvedor Júnior com sólida base em lógica de programação e arquitetura de sistemas. Foco na entrega de interfaces responsivas, otimização de bancos de dados e implementação de novas funcionalidades utilizando C#, ASP.NET e tecnologias modernas.</p>
@@ -45,6 +45,37 @@
                     <a href="https://github.com/PedroPicelli7" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/pedro-picelli" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:pedropicelli80@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Coluna da Direita (Nova: Imagem/Elemento de Programação) -->
+            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="window-title">portfolio.cs</span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="keyword">using</span> System;
+
+<span class="keyword">namespace</span> <span class="type">PedroPortfolio</span>
+{
+    <span class="keyword">class</span> <span class="type">Program</span>
+    {
+        <span class="keyword">static</span> <span class="keyword">void</span> <span class="method">Main</span>()
+        {
+            <span class="keyword">var</span> pedro = <span class="keyword">new</span> <span class="type">Developer</span>({
+                Role = <span class="string">"Full-stack"</span>,
+                Skills = [<span class="string">"C#"</span>, <span class="string">"React"</span>, <span class="string">".NET"</span>]
+            });
+            
+            pedro.<span class="method">BuildAmazingProjects</span>();
+        }
+    }
+}</code></pre>
+                    </div>
                 </div>
             </div>
         </div>

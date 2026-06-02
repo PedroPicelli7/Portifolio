@@ -428,44 +428,46 @@ section {
     color: var(--accent-neon);
 }
 
-/* LINHA DE EXPERIÊNCIA DA TAISIA */
-.exp-table-premium {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
+/* LINHA DE EXPERIÊNCIA ATUALIZADA COM ALINHAMENTO CORRETO */
+.exp-table-premium { 
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 60px; 
 }
 
 .exp-row-premium {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr 1.2fr 2fr;
-    padding: 30px 0;
-    border-bottom: 1px solid var(--border-thin);
+    display: grid; 
+    grid-template-columns: 1.2fr 1.2fr 1.8fr 3fr; /* Distribuição de espaço aprimorada */
+    gap: 20px;
+    padding: 30px 0; 
+    border-bottom: 1px solid var(--border-thin); 
     transition: 0.3s;
 }
 
-.exp-row-premium:hover {
-    background: rgba(255, 255, 255, 0.01);
-    padding-left: 15px;
+.exp-row-premium:hover { 
+    background: rgba(255, 255, 255, 0.01); 
+    padding-left: 15px; 
 }
 
-.exp-col {
-    font-size: 1rem;
-    color: var(--text-white);
-    align-self: center;
+.exp-col { 
+    font-size: 1rem; 
+    color: var(--text-white); 
+    align-self: start; /* Alinha o texto no topo se houver quebra de linha */
 }
 
-.exp-col.date {
-    color: var(--text-gray);
+.exp-col.date { 
+    color: var(--text-gray); 
 }
 
-.exp-col.company {
-    font-weight: 600;
-    color: var(--accent-neon);
+.exp-col.company { 
+    font-weight: 600; 
+    color: var(--accent-neon); 
 }
 
-.exp-col.desc {
-    color: var(--text-gray);
-    font-size: 0.95rem;
+.exp-col.desc { 
+    color: var(--text-gray); 
+    font-size: 0.95rem; 
+    line-height: 1.5;
 }
 
 /* CONTATO COMPACTO BOX */
